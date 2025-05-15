@@ -97,10 +97,10 @@
           <h1 class="title is-1 publication-title">ClutterDexGrasp: A Sim-to-Real System for General Dexterous Grasping in Cluttered Scenes</h1>
 
           <!-- author block after publication -->
-          <!-- <div class="is-size-5 publication-authors">
+          <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
-            <span class="author-block">
+              <a href="">Anonymous</a><sup>1</sup>,</span>
+            <!-- <span class="author-block">
               <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://jonbarron.info">Jonathan T. Barron</a><sup>2</sup>,
@@ -115,9 +115,9 @@
               <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
+              <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup> -->
             </span>
-          </div> -->
+          </div>
 
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Washington,</span>
@@ -185,6 +185,9 @@
 
 
 
+
+
+<!-- First video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -199,6 +202,10 @@
   </div>
 </section>
 
+
+
+
+<!-- Abstract and video -->
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -244,39 +251,49 @@
 
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/uncut ultra x8.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="/static/videos/uncut ultra x8.mp4"
-                    type="video/mp4">
+      <!-- Sparse Cluttered Scene -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Sparse Cluttered Scene</h2>
+          <p>
+            Our policy efficiently handles sparse cluttered scenes, smoothly navigating to grasp targets with minimal collisions.
+          </p>
+          <video id="sparse-scene" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/uncut ultra x8.mp4" type="video/mp4">
           </video>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- a section for single video with caption -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="/static/videos/uncut ultra x8.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        With a single policy, <span class="dnerf"> ClutterDexGrasp</span> achieves zero-shot general dexterous grasping in unseen real-world cluttered scenes across varying density levels.
-      </h2>
+      <!-- Dense Cluttered Scene -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Dense Cluttered Scene</h2>
+          <p>
+            Demonstrates the robustness of our policy in highly cluttered environments, effectively clearing obstacles to reach targets.
+          </p>
+          <video id="dense-scene" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/uncut ultra x8.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Highly Dense Cluttered Scene (New Column) -->
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Highly Dense Cluttered Scene</h2>
+          <p>
+            Even in extreme clutter, our system performs robust grasps by dynamically adjusting its approach and clearing paths intelligently.
+          </p>
+          <video id="highly-dense-scene" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/uncut ultra x8.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
