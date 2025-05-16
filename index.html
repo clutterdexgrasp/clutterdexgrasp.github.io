@@ -192,6 +192,16 @@
 <!-- Abstract and video -->
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Figure 1 -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="image">
+          <img src="./static/images/fig1.pdf" alt="Teaser image of the paper."/>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -220,6 +230,43 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/RuSxGEG-nlc"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
+
+<!-- Highlights -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Title and Description -->
+  <div class="columns is-centered">
+    <div class="column has-text-left">
+      <h2 class="title is-5">Highlights - Single Policy</h2>
+    </div>
+  </div>
+
+    <!-- Video -->
+    <div class=""
+
+  </div>
+</section>
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
+
+
+
+<!-- Intro Video -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -232,19 +279,39 @@
     <!--/ Paper video. -->
   </div>
 </section>
-<hr style="border: none; height: 2px; background-color: #ddd; margin: 3rem 0;">
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
 
 
 
 
 
-<!-- First Video -->
+<!-- Cluttered-Scene -->
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Title -->
+    <!-- Description -->
     <div class="columns is-centered">
-      <div class="column">
-        <h2 class="title is-5">Generalization Across Clutter Densities (Uncut Videos)</h2>
+      <div class="column has-text-left">
+        <h2 class="title is-4">Generalization Across Clutter Densities, Novel Scenes with Novel Objects (Uncut Videos)</h2>
+        
+        <p style="margin-top: 1rem;">
+          <strong>41</strong> objects with diverse shapes, sizes, and materials were tested under three clutter densities:
+        </p>
+        
+        <ul style="list-style-type: disc; margin-left: 2rem; margin-top: 1rem;">
+          <li><strong>9</strong> Sparse Scenes</li>
+          <li><strong>5</strong> Dense Scenes</li>
+          <li><strong>3</strong> Extreme Scenes</li>
+        </ul>
+        
+        <p style="margin-top: 1rem;">
+          The entire object set is covered across all densities. The policy grasps until <strong>3 consecutive failures</strong>, 
+          with target objects randomly selected from visible masks, resulting increased difficulty. This encourages interaction with occlusions, 
+          resembling real-world scenarios where humans retrieve buried items.
+        </p>
+
+        <p style="margin-top: 1rem;">
+          Below are three <strong>UNCUT</strong> videos demonstrating the policy's performance in three novel cluttered scenes.
+        </p>
       </div>
     </div>
 
@@ -403,17 +470,35 @@
     
   </div>
 </section>
-<hr style="border: none; height: 2px; background-color: #ddd; margin: 3rem 0;">
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
+
 
 <!-- Human-like Video -->
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Title and Description -->
     <div class="columns is-centered">
-      <div class="column">
-        <h2 class="title is-5">Human-Like Behaviour Visualization</h2>
+      <div class="column has-text-left">
+        <h2 class="title is-4">Human-Like Behavior Visualization</h2>
+        <p>
+          We visualize human-like behavior by comparing the same policy in two scenarios with the target at the same location:
+        </p>
+        <ul style="list-style-type: disc; margin-left: 2rem; margin-top: 1rem;">
+          <li><strong>Clutter-Free:</strong> Desires directly grasping the target without considering surroundings.</li>
+          <li><strong>Cluttered:</strong> Requires navigating around clutter and clears obstacles to reach the target.</li>
+        </ul>
+        <p style="margin-top: 1rem;">As shown in the video, our policy demonstrates:</p>
+        <ul style="list-style-type: disc; margin-left: 2rem;">
+          <li><strong>Direct Grasping:</strong> In clutter-free scenes.</li>
+          <li><strong>Gentle Clutter Clearance:</strong> Stratigicall nudges overlying objects instead of forcefully pushing them.</li>
+          <li><strong>Clutter-Aware Grasp:</strong> Grasp the target from the side to avoid collisions.</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          Note that these behaviors emerge automatically and composed seamlessly, without heuristic mode identification or switching, enabling effective, adaptive, and collision-minimized grasping.
       </div>
     </div>
 
+    <!-- Video -->
     <div class="columns is-vcentered" style="align-items: stretch;">
 
       <!-- Left Column: Video 1 -->
@@ -423,7 +508,7 @@
         </video>
         <!-- Title Overlay -->
         <div style="position: absolute; top: 20px; left: 20px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px;">
-          Direct Grasping
+          Clutter-free Scene
         </div>
         <!-- x8 Overlay -->
         <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
@@ -438,7 +523,7 @@
         </video>
         <!-- Title Overlay -->
         <div style="position: absolute; top: 20px; left: 20px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 4px;">
-           Clutter-Aware Grasping
+           Cluttered Scene
         </div>
         <!-- x8 Overlay -->
         <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
@@ -452,18 +537,26 @@
     <div class="columns is-centered">
       <div class="column is-eight has-text-centered">
         <p>
-          Our system demonstrates robust generalization across cluttered environments of varying densities. 
-          From sparse to dense scenes, <strong>ClutterDexGrasp</strong> efficiently navigates occlusions, 
-          adapts grasp strategies, and performs safe, reliable grasps in real-world conditions.
+          Our system demonstrates diverse strategies based on the cluttered scene. 
         </p>
       </div>
     </div>
   </div>
 </section>
-<hr style="border: none; height: 2px; background-color: #ddd; margin: 3rem 0;">
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
 
 
 
+<!-- More Capabilities -->
+<section class="section">
+  <!-- Description -->
+  <div class="columns is-centered">
+    <div class="column has-text-left">
+      <h2 class="title is-4">Generalization Across Clutter Densities, Novel Scenes with Novel Objects (Uncut Videos)</h2>
+    </div>
+  </div>
+</section>
+<hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
 
 
 <!-- citation -->
