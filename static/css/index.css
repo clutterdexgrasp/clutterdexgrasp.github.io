@@ -155,3 +155,18 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+
+.link-underline-disappear {
+  color: #4891ea;
+  text-decoration: none;
+  border-bottom: 2px dotted #4891ea;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.link-underline-disappear:hover {
+  border-bottom: 2px dotted transparent; /* Keeps the space but hides the line */
+  color: #4891ea;
+}
