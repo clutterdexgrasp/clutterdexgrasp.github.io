@@ -250,12 +250,17 @@
     <!-- Title and Description -->
   <div class="columns is-centered">
     <div class="column has-text-left">
-      <h2 class="title is-5">Highlights - Single Policy</h2>
+      <h2 class="title is-4">Highlights</h2>
+      <p>
+        Videos below are recorded with a single end-to-end policy trained in Simulation.
+      </p>
     </div>
   </div>
 
     <!-- Video -->
-    <div class=""
+    <div class="">
+
+    </div>
 
   </div>
 </section>
@@ -300,7 +305,7 @@
         <ul style="list-style-type: disc; margin-left: 2rem; margin-top: 1rem;">
           <li><strong>9</strong> Sparse Scenes</li>
           <li><strong>5</strong> Dense Scenes</li>
-          <li><strong>3</strong> Extreme Scenes</li>
+          <li><strong>3</strong> Ultra-dense Scenes</li>
         </ul>
         
         <p style="margin-top: 1rem;">
@@ -408,11 +413,69 @@
         </div>
     </a>
 
+    <!-- Ultra-dense grasping Title and Description -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-5">More Ultra-dense Grasping</h2>
+        <p style="margin-top: -1rem;">
+          Prior works would fail in these scenes, where grasp pose estimation and direct grasping is infeasible due to heavy occlusions.
+        </p>
+      </div>
+    </div>
+
+    <!-- Ultra-dense grasping videos -->
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <!-- Repeat this block for each video with a unique label -->
+        <div class="item item-steve" style="position: relative;">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
+          </video>
+          <!-- Label Overlay -->
+          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
+            1
+          </div>
+        </div>
+
+        <div class="item item-chair-tp" style="position: relative;">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
+          </video>
+          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
+            2
+          </div>
+        </div>
+
+        <div class="item item-steve" style="position: relative;">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
+          </video>
+          <!-- Label Overlay -->
+          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
+            3
+          </div>
+        </div>
+
+        <div class="item item-chair-tp" style="position: relative;">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
+          </video>
+          <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
+            4
+          </div>
+        </div>
+
+        <!-- Repeat for other videos... -->
+        
+      </div>
+    </div>
+    
+
     <!-- Highlight Title and Description -->
     <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-5">Highlights</h2>
-        <p style="margin-top: -1rem;">
+        <p style="margin-top: 1rem;">
           (1) Robust against occlusion caused by waving hand in front of the camera.
         </p>
         <p>
@@ -549,14 +612,160 @@
 
 <!-- More Capabilities -->
 <section class="section">
-  <!-- Description -->
-  <div class="columns is-centered">
-    <div class="column has-text-left">
-      <h2 class="title is-4">Generalization Across Clutter Densities, Novel Scenes with Novel Objects (Uncut Videos)</h2>
+  <div class="container is-max-desktop">
+    <!-- Title and Description -->
+    <div class="columns is-centered">
+      <div class="column has-text-left">
+        <h2 class="title is-4">More Capabilities</h2>
+        <p>
+          Videos below are recorded with a single end-to-end policy trained in Simulation.
+        </p>
+      </div>
     </div>
+
+    <!-- Single-Object Grasping -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-5">Continuous Grasping-and-Transport of 30 Unique Objects (Uncut Video)</h2>
+        <p style="margin-top: 1rem;">
+          Our policy remains robust against:
+        </p>
+        <p style="margin-top: 1rem;">
+          (0:01, 0:52) Tiny Object (Grasping such small object in real-world was not seen in any of prior works)
+        </p>
+        <p>
+          (0:08, 0:17) Occlusion caused by waiving hand in front of the camera.
+        </p>
+        <p>
+          (0:11) Perturbation during grasping. 
+        </p>
+        <p>
+          (0:30) Irregular Object
+        </p>
+        <p>
+          (1:20) Moving Object
+        </p>
+      </div>
+    </div>
+
+    <!-- Single-Obejct Grasping Video -->
+    <div class="columns is-centered" style="align-items: stretch;">
+      <div class="column is-four-fifths">
+        <!-- Left Column: Video 1 -->
+        <div class="column has-text-centered" style="position: relative;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
+          </video>
+          <!-- x8 Overlay -->
+          <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+            8x
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Description Below Columns -->
+    <div class="columns is-centered">
+      <div class="column is-eight has-text-centered">
+        <p>
+          Our system demonstrates diverse strategies based on the cluttered scene. 
+        </p>
+      </div>
+    </div>
+
+
+    <!-- 3D-Space Grasping -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-5">3D-Space (Uncut Video)</h2>
+      </div>
+    </div>
+
+    <!-- 3D-Space Grasping Video -->
+    <div class="columns is-vcentered" style="align-items: stretch;">
+
+      <!-- Left Column: Video 1 -->
+      <div class="column has-text-centered" style="position: relative;">
+        <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
+        </video>
+        <!-- x8 Overlay -->
+        <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+          8x
+        </div>
+      </div>
+
+      <!-- Left Column: Video 1 -->
+      <div class="column has-text-centered" style="position: relative;">
+        <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
+        </video>
+        <!-- x8 Overlay -->
+        <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+          8x
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Description Below Columns -->
+    <div class="columns is-centered">
+      <div class="column is-eight has-text-centered">
+        <p>
+          Our system demonstrates diverse strategies based on the cluttered scene. 
+        </p>
+      </div>
+    </div>
+
+
+
+    <!-- Dynamic Grasping -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-5">Dynamic Grasping</h2>
+      </div>
+    </div>
+
+    <!-- Dynamic Grasping Video -->
+    <div class="columns is-vcentered" style="align-items: stretch;">
+
+      <!-- Left Column: Video 1 -->
+      <div class="column has-text-centered" style="position: relative;">
+        <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="./static/videos/dynamic grasping x2.mp4" type="video/mp4">
+        </video>
+        <!-- x8 Overlay -->
+        <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+          2x
+        </div>
+      </div>
+
+      <!-- Left Column: Video 1 -->
+      <div class="column has-text-centered" style="position: relative;">
+        <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+          <source src="./static/videos/dynamic grasping x2.mp4" type="video/mp4">
+        </video>
+        <!-- x8 Overlay -->
+        <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+          2x
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Description Below Columns -->
+    <div class="columns is-centered">
+      <div class="column is-eight has-text-centered">
+        <p>
+          Our system demonstrates diverse strategies based on the cluttered scene. 
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 <hr style="border: none; height: 2px; background-color: #ddd; margin: 0rem 0;">
+
 
 
 <!-- citation -->
