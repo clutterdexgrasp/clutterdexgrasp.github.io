@@ -158,7 +158,7 @@
                 </a>
               </span>
               <!-- Code Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -166,7 +166,7 @@
                   </span>
                   <span>Code (coming soon)</span>
                   </a>
-              </span> -->
+              </span>
               <!-- Dataset Link. -->
               <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
@@ -414,24 +414,22 @@
     </a>
 
     <!-- Ultra-dense grasping Title and Description -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column">
         <h2 class="title is-5">More Ultra-dense Grasping</h2>
         <p style="margin-top: -1rem;">
           Prior works would fail in these scenes, where grasp pose estimation and direct grasping is infeasible due to heavy occlusions.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <!-- Ultra-dense grasping videos -->
-    <div class="container">
+    <!-- <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-        <!-- Repeat this block for each video with a unique label -->
         <div class="item item-steve" style="position: relative;">
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
             <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
           </video>
-          <!-- Label Overlay -->
           <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
             1
           </div>
@@ -450,7 +448,6 @@
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%" style="width: 100%; object-fit: cover;">
             <source src="./static/videos/uncut sparse x8.mp4" type="video/mp4">
           </video>
-          <!-- Label Overlay -->
           <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">
             3
           </div>
@@ -465,10 +462,8 @@
           </div>
         </div>
 
-        <!-- Repeat for other videos... -->
-        
       </div>
-    </div>
+    </div> -->
     
 
     <!-- Highlight Title and Description -->
@@ -677,7 +672,7 @@
     <!-- 3D-Space Grasping -->
     <div class="columns is-centered">
       <div class="column">
-        <h2 class="title is-5">3D-Space (Uncut Video)</h2>
+        <h2 class="title is-5">3D-Space</h2>
       </div>
     </div>
 
@@ -686,8 +681,8 @@
 
       <!-- Left Column: Video 1 -->
       <div class="column has-text-centered" style="position: relative;">
-        <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
-          <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
+        <video autoplay controls muted loop playsinline style="width: 77%; height: 100%; object-fit: cover;">
+          <source src="./static/videos/3d_space.mp4" type="video/mp4">
         </video>
         <!-- x8 Overlay -->
         <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
@@ -696,15 +691,14 @@
       </div>
 
       <!-- Left Column: Video 1 -->
-      <div class="column has-text-centered" style="position: relative;">
+      <!-- <div class="column has-text-centered" style="position: relative;">
         <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
           <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
         </video>
-        <!-- x8 Overlay -->
         <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
           8x
         </div>
-      </div>
+      </div> -->
 
     </div>
 
@@ -727,29 +721,41 @@
     </div>
 
     <!-- Dynamic Grasping Video -->
-    <div class="columns is-vcentered" style="align-items: stretch;">
+    <div class="columns is-centered" style="align-items: stretch;">
 
       <!-- Left Column: Video 1 -->
-      <div class="column has-text-centered" style="position: relative;">
+      <!-- <div class="column has-text-centered" style="position: relative;">
         <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
           <source src="./static/videos/dynamic grasping x2.mp4" type="video/mp4">
         </video>
-        <!-- x8 Overlay -->
         <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
           2x
+        </div>
+      </div> -->
+
+      <div class="column is-four-fifths">
+        <!-- Left Column: Video 1 -->
+        <div class="column has-text-centered" style="position: relative;">
+          <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="./static/videos/uncut single x8.mp4" type="video/mp4">
+          </video>
+          <!-- x8 Overlay -->
+          <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+            8x
+          </div>
         </div>
       </div>
 
       <!-- Left Column: Video 1 -->
-      <div class="column has-text-centered" style="position: relative;">
+      <!-- <div class="column has-text-centered" style="position: relative;">
         <video autoplay controls muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
           <source src="./static/videos/dynamic grasping x2.mp4" type="video/mp4">
-        </video>
+        </video> -->
         <!-- x8 Overlay -->
-        <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
+        <!-- <div style="position: absolute; bottom: 20px; right: 20px; color: #ffffff; font-size: 1.5rem; font-weight: bold;">
           2x
         </div>
-      </div>
+      </div> -->
 
     </div>
 
