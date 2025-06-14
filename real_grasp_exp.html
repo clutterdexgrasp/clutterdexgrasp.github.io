@@ -1,2 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Experimental Videos for ClutterDexGrasp in Various Cluttered Scenes">
+  <meta name="keywords" content="Manipulation, Dexterous Grasping, Sim-to-Real, Experiments">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ClutterDexGrasp: Experimental Videos</title>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WV3X5WGQKJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WV3X5WGQKJ');
+  </script>
 
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- Custom CSS for Horizontal Scroll -->
+  <style>
+    .video-scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      padding-bottom: 1rem;
+      gap: 1rem;
+    }
+    .video-scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+    .video-scroll-container::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    .video-scroll-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    .video-item {
+      flex: 0 0 auto;
+      width: 300px; /* Fixed width for videos */
+      scroll-snap-align: start;
+      position: relative;
+    }
+    .video-item video {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body" style="padding-bottom: 0rem;">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ClutterDexGrasp: Experimental Videos</h1>
+          <p class="subtitle is-4">Demonstrations of Dexterous Grasping in Cluttered Scenes with Varying Object Counts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experiments Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Introduction -->
+    <div class="columns is-centered">
+      <div class="column has-text-left">
+        <h2 class="title is-4">Overview</h2>
+        <p>
+          This page showcases experimental videos of <strong>ClutterDexGrasp</strong> performing dexterous grasping in cluttered scenes with different object counts: 4, 6, 8, 11, 15, 16, 18, and 20 objects. For scenes with 4, 6, and 8 objects, we provide videos from two distinct setups to demonstrate robustness across varied configurations. Each section below includes uncut videos from the policy's observation view, displayed horizontally with a draggable scroll bar, highlighting the system's ability to handle occlusions, diverse object geometries, and varying clutter density.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4 Objects (Scene 1) -->
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-5">4 Objects (Scene 1)</h2>
+        <p>Uncut videos demonstrating grasping in a scene with 4 objects.</p>
+      </div>
+    </div>
+    <div class="video-scroll-container">
+      <div class="video-item">
+        <video poster="" autoplay controls muted loop playsinline>
+          <source src="./static/policy_view_videos/4_1/exp_t=24.09_success:y_converted.mp4" type="video/mp4">
+        </video>
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">1</div>
+      </div>
+      <div class="video-item">
+        <video poster="" autoplay controls muted loop playsinline>
+          <source src="./static/policy_view_videos/4_1/exp_t=39.96_success:y_converted.mp4" type="video/mp4">
+        </video>
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">2</div>
+      </div>
+      <div class="video-item">
+        <video poster="" autoplay controls muted loop playsinline>
+          <source src="./static/policy_view_videos/4_1/exp_t=10.63_success:y_converted.mp4" type="video/mp4">
+        </video>
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">3</div>
+      </div>
+      <div class="video-item">
+        <video poster="" autoplay controls muted loop playsinline>
+          <source src="./static/policy_view_videos/4_1/exp_t=5.65_success:y_converted.mp4" type="video/mp4">
+        </video>
+        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 0.9rem;">4</div>
+      </div>
+    </div>
+
+   
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">VoxelPoser</a>.
+          </p>
+          <p>
+            <a href="index.html">Back to Main Page</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
